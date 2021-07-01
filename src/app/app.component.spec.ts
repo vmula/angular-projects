@@ -96,7 +96,6 @@ describe('AppComponent', () => {
     const app = fixture.componentInstance;
 
     app.getSpaceXData();
-    app.hasError = true;
 
     fixture.detectChanges();
 

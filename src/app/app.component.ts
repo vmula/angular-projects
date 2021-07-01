@@ -5,6 +5,7 @@ import { catchError, tap } from 'rxjs/operators';
 
 import { Params, Space, SpaceXService } from './services/space-x.service';
 
+
 type FilterName = 'launch_year' | 'launch_success' | 'land_success'
 
 @Component({
@@ -15,7 +16,7 @@ type FilterName = 'launch_year' | 'launch_success' | 'land_success'
 export class AppComponent implements OnInit {
   spaces$: Observable<Space[]>;
   public parameters: Params = {
-    limit: 10,
+    limit: 100,
   };
   public launchYears = [
     '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013',
